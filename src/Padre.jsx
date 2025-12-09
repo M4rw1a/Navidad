@@ -38,7 +38,6 @@ function Padre() {
                 </div>
             </nav>
 
-            
             <div className="contenido">
                 <Routes>
                     <Route path="/" element={
