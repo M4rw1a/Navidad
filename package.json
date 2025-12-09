@@ -1,9 +1,9 @@
 {
-  "name": "examenfinal",
+  "name": "Navidad",
+  "homepage": "https://m4rw1a.github.io/Navidad/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://m4rw1a.github.io/Navidad/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
