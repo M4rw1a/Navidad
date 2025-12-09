@@ -1,0 +1,180 @@
+.padre{
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-areas: " titulo titulo titulo titulo"
+                         " nav nav nav nav"
+                         " contenido contenido contenido derecha"
+                         " contenido contenido contenido derecha"
+                         " contenido contenido contenido derecha"
+                         " contenido contenido contenido derecha"
+                         " contenido contenido contenido derecha"
+                         " contenido contenido contenido derecha"
+                         " footer footer footer footer"
+                         
+}
+.carousel{
+    height: 20vh;
+    width: 40vw;
+}
+.titulo{
+    padding-bottom: 0 !important;
+    color: white;
+    grid-area: titulo;
+    background-color: #5E0001;
+    text-align: center;
+    
+}
+
+.navbar{
+    grid-area: nav;
+    background-color: rgb(248, 130, 130) !important;
+    text-align: center;
+    display: flex;
+}
+.contenido{
+    align-items: center ;
+    grid-area: contenido;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    
+}
+
+.derecha {
+    background: #72da96;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin: 20px;
+    min-height: 300px;
+}
+
+.redes-sociales h4 {
+    color: #000000;
+    
+    padding-bottom: 5px;
+    
+    text-align: center;
+}
+
+.botones-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.btn-redes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-redes:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.emoji {
+    font-size: 24px;
+    width: 30px;
+    text-align: center;
+}
+
+/* Colores específicos para cada red social */
+.facebook {
+    background: #1877f2;
+}
+
+.facebook:hover {
+    background: #166fe5;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+.instagram:hover {
+    opacity: 0.9;
+}
+
+.twitter {
+    background: #1da1f2;
+}
+
+.twitter:hover {
+    background: #1a91da;
+}
+
+.pinterest {
+    background: #e60023;
+}
+
+.pinterest:hover {
+    background: #cc001f;
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.youtube:hover {
+    background: #e60000;
+}
+
+/* Newsletter */
+.newsletter {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.newsletter h5 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.newsletter input {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+}
+
+.newsletter button {
+    background: #ffd700;
+    color: #1a472a;
+    font-weight: bold;
+    border: none;
+}
+
+.newsletter button:hover {
+    background: #ffcc00;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    .derecha {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .btn-redes {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+.footer{
+    grid-area: footer;
+    background-color: lightgray;
+    text-align: center;
+}
